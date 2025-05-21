@@ -1,32 +1,77 @@
 # DevOps25 🚀
 
-Welcome to the **DevOps25** project! This repository is part of my Cloud Resume Challenge (AWS) and demonstrates foundational DevOps skills, including:
-
-- Hosting a static resume website
-- Writing infrastructure-as-code
-- Automating builds with CI/CD
+This project is part of my **Cloud Resume Challenge**, showcasing my hands-on skills in DevOps, cloud infrastructure, and automation. It features a secure, scalable, and automated static resume website hosted on **Amazon S3** with a custom domain and HTTPS via **CloudFront**. The site is continuously deployed via **GitHub Actions**.
 
 ---
 
-## 🧠 Project Overview
-
-This project hosts my professional resume as a static HTML page and includes the following:
-
-- `index.html`: My HTML resume
-- `style.css`: Styling for the resume (if added)
-- `buildspec.yml`: AWS CodeBuild configuration for CI/CD
-- `my_app.py`: Placeholder or backend script (future use or demo)
-- `textfile.txt`: Initial test or sample file
+## 🌐 Live Site
+🔗 https://anjellscloud.com
 
 ---
 
-## 🛠️ Tools & Technologies Used
+## 💼 Features
 
-- **HTML/CSS** – for the static site
-- **AWS S3** – static website hosting
-- **AWS CodeBuild** – continuous deployment from GitHub
-- **GitHub Actions** (optional) – for CI automation
-- **Git/GitHub** – version control and collaboration
+- **Responsive static website** styled with HTML/CSS
+- **HTTPS-secured** via AWS Certificate Manager + CloudFront
+- **Custom domain** purchased through Route 53
+- **Hosted** on S3 with static website hosting
+- **CI/CD** pipeline powered by GitHub Actions
+- **Resume PDF download** with animated CTA
+- **Badging** using AWS Certification badge via Credly
+- **Technical skills** section with cloud/dev tools
+- Infrastructure aligned with **AWS best practices**
+
+---
+
+## ⚙️ Tech Stack
+
+| Category              | Tools & Services                             |
+|-----------------------|-----------------------------------------------|
+| Cloud Hosting         | AWS S3, CloudFront, Route 53, ACM            |
+| CI/CD Pipeline        | GitHub Actions                               |
+| Frontend              | HTML, CSS, JavaScript                        |
+| Version Control       | Git + GitHub                                 |
+| Resume Certification  | AWS Solutions Architect – Associate (SAA-C03)|
+
+---
+
+## 📁 Folder Structure
+
+```
+.
+├── assets/                  # CSS/JS assets
+├── images/                 # Images & headshot
+├── index.html              # Main HTML page
+├── AnjellHanley_Resume.pdf # Downloadable resume
+├── .github/workflows/      # GitHub Actions pipeline
+├── buildspec.yml           # (Optional for AWS CodeBuild)
+```
+
+---
+
+## 🚀 CI/CD Workflow Summary
+
+Every push to the `main` branch triggers the following:
+
+- ✅ Sync files to S3 bucket (`anjellscloud.com`)
+- 🔄 (Optional) Invalidate CloudFront cache
+- 🔐 All secrets stored securely in GitHub Actions
+
+---
+
+## 🗄️ Certification Badge
+
+I am an **AWS Certified Solutions Architect – Associate**
+
+![AWS Badge](https://images.credly.com/size/220x220/images/0eaeaa7a-cb91-45ad-89ef-bb6f2cace90c/image.png)
+
+---
+
+---
+
+## 📌 License
+
+This project is free to use under the [MIT License](LICENSE).
 
 ---
 
